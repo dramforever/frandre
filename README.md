@@ -1,6 +1,6 @@
 # Frandre
 
-This project is **entirely** work-in-progress and nothing is available yet.
+This project is **entirely work-in-progress** and nothing is available yet.
 
 'Frandre' stands for *F*unctional *R*eactive *An*imation *Dr*awing *E*nvironment.
 
