@@ -10,9 +10,14 @@ const Model = require ('./model');
 const {topological_sort, can_reach, propagate} = require ('./graph');
 
 const models = {
-    Button: require ('./models/button.js'),
-    Counter: require ('./models/counter.js'),
-    Mover: require ('./models/mover.js')
+    Button: require ('./models/button'),
+    Display: require ('./models/display'),
+    Mover: require ('./models/mover'),
+    time: require ('./models/time'),
+    Mouse: require ('./models/mouse'),
+    Float: require ('./models/float'),
+    Gate: require ('./models/gate'),
+    weakArith: require ('./models/weak-arith')
 };
 
 class Frandre {
@@ -121,10 +126,46 @@ class Frandre {
 
     play () {
         window._x1 = new models.Button (this);
-        window._x2 = new models.Button (this);
+        window._x1.position (200, 50);
 
-        window._y = new models.Counter (this);
+        window._x2 = new models.Button (this);
+        window._x2.position (200, 150);
+
+        window._y = new models.Display (this);
+        window._y.position (800, 50);
+
         window._mv = new models.Mover (this);
+        window._mv.position (800, 150);
+
+        window._dt = new models.time.Dt (this);
+        window._dt.position (200, 250);
+
+        window._time = new models.time.Time (this);
+        window._time.position (600, 50);
+
+        window._sin = new models.weakArith.Sin (this);
+        window._sin.position (500, 150);
+
+        window._mouse = new models.Mouse (this);
+        window._mouse.position (400, 550);
+
+        window._float = new models.Float (this);
+        window._float.position (800, 350);
+
+        window._wplus = new models.weakArith.Plus (this);
+        window._wplus.position (800, 450);
+
+        window._wmult = new models.weakArith.Mult (this);
+        window._wmult.position (800, 550);
+
+        window._gate1 = new models.Gate (this);
+        window._gate1.position (600, 250);
+
+        window._gate2 = new models.Gate (this);
+        window._gate2.position (600, 350);
+
+        window._gate3 = new models.Gate (this);
+        window._gate3.position (600, 450);
     }
 
     processEvents () {

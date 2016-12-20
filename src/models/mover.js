@@ -1,4 +1,6 @@
-class Counter extends Model {
+const Model = require ('../model');
+
+class Mover extends Model {
     constructor (frandre) {
         super (frandre);
         this.resize (150, 50);
@@ -29,4 +31,4 @@ class Counter extends Model {
     }
 }
 
-module.exports = Counter;
+module.exports = Mover;

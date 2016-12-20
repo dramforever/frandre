@@ -91,9 +91,12 @@ module.exports = {
                 const p = link.get ('source').port;
                 if (mark[node_id].hasOwnProperty (p)) {
                     const { id: that_id, port: that_in_port } = link.get ('target');
-                    seen.push (that_id);
-                    const that_node = frandre.paper.getModelById (that_id);
-                    that_node.addEvent (that_in_port, mark[node_id][p]);
+                    if (that_id) {
+                        seen.push (that_id);
+                        const that_node = frandre.paper.getModelById (that_id);
+                        for (let ev of mark[node_id][p])
+                            that_node.addEvent (that_in_port, ev);
+                    }
                 }
             }
         }

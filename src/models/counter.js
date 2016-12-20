@@ -1,3 +1,5 @@
+const Model = require ('../model');
+
 class Counter extends Model {
     constructor (frandre) {
         super (frandre);
@@ -9,14 +11,13 @@ class Counter extends Model {
     }
 
     handleEvents ({in: evs}) {
-        for (let _x of evs) {
-            this.count ++;
-        }
+        for (let x of evs)
+            this.count += x;
         this.updateCounter ();
     }
 
     updateCounter () {
-        this.setLabel (this.count.toString ());
+        this.setLabel (Math.floor(this.count).toString ());
     }
 }
 
