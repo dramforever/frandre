@@ -17,3 +17,8 @@ Frandre is (to be) a *graphical* environment for creating such programs. The us
 Now a basic circuit editor and interpreter is ready (see demo above), but it has lots of problems, and there aren't enough components to be useful. But it's already reacting! Isn't it cute?
 
 *Etymology note*: There's a cute (!) vampire in the game series *Touhou Project*. Her name is *Flandre Scarlet* and she's nicknamed *Flan*.
+ 
+## Thanks
+ 
+- Thanks to [jointjs](http://jointjs.com) for the excellent diagramming library.
+- Thanks to [Incredible proof machine](http://incredible.pm) for some code. (Search `incredible` to see it)
