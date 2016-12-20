@@ -2,6 +2,11 @@
   "name": "frandre",
   "version": "0.1.0",
   "main": "src/main.js",
+
+  "scripts": {
+      "start": "electron ."
+  },
+
   "devDependencies": {
     "electron": "^1.4.12"
   },

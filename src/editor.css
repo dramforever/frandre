@@ -4,3 +4,7 @@ body {
     width: 100vw;
     height: calc(100vh - 5px);
 }
+
+.available-magnet {
+    fill: #00dd00;
+}
