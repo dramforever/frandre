@@ -14,4 +14,6 @@ It is a project inspired by Fran, Functional Reactive Animation, the now defunct
 
 Frandre is (to be) a *graphical* environment for creating such programs. The user would draw a *circuit* of reactive components, and Frandre would interpret it.
 
+Now a basic circuit editor and interpreter is ready (see demo above), but it has lots of problems, and there aren't enough components to be useful. But it's already reacting! Isn't it cute?
+
 *Etymology note*: There's a cute (!) vampire in the game series *Touhou Project*. Her name is *Flandre Scarlet* and she's nicknamed *Flan*.
