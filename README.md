@@ -4,6 +4,10 @@ This project is **entirely work-in-progress** and basically nothing is available
 
 ## Early demo
 
+[A web demo.](https://dram.cf/frandre) Needs a good browser (I use some new Javascript features)
+
+Some GIFs:
+
 ![Frandre early demo](http://i.imgur.com/29vK8Zk.gif)
 
 ![Frandre early demo](http://i.imgur.com/CfbNZkH.gif)
