@@ -6,6 +6,8 @@ This project is **entirely work-in-progress** and basically nothing is available
 
 ![Frandre early demo](http://i.imgur.com/29vK8Zk.gif)
 
+![Frandre early demo](http://i.imgur.com/CfbNZkH.gif)
+
 ## What?
 
 'Frandre' stands for *F*unctional *R*eactive *An*imation *Dr*awing *E*nvironment.
