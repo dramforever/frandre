@@ -12,6 +12,8 @@ Some GIFs:
 
 ![Frandre early demo](http://i.imgur.com/CfbNZkH.gif)
 
+![Frandre early demo](http://i.imgur.com/0vJPjBg.gif)
+
 ## What?
 
 'Frandre' stands for *F*unctional *R*eactive *An*imation *Dr*awing *E*nvironment.
