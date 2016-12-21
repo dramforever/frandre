@@ -11,7 +11,7 @@ class Float extends Model {
 
     handleEvents ({in: evs}) {
         for (let e of evs)
-            this.position (e[0] - 75, e[1] - 150);
+            this.position (e[0] - 75, e[1] - 25);
     }
 }
 

@@ -8,7 +8,7 @@ class Dt extends Model {
         this.setLabel ('δt');
         this.currentTime = 0;
         const handler = (newTime) => {
-            this.causeEvent ('out', newTime - this.currentTime);
+            this.causeEvent ('out', (newTime - this.currentTime) / 1000);
             this.currentTime = newTime;
             window.requestAnimationFrame (handler);
         };
@@ -23,7 +23,7 @@ class Time extends Model {
         this.addOutPort ('out');
         this.setLabel ('t');
         const handler = (newTime) => {
-            this.causeEvent ('out', newTime);
+            this.causeEvent ('out', newTime / 1000);
             window.requestAnimationFrame (handler);
         };
         window.requestAnimationFrame (handler);

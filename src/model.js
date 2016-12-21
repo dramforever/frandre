@@ -1,5 +1,7 @@
 "use strict";
 
+const joint = require ('jointjs');
+
 class Model extends joint.shapes.devs.Model {
     constructor (frandre) {
         super ({

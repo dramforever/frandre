@@ -17,7 +17,7 @@ const models = {
     Mouse: require ('./models/mouse'),
     Float: require ('./models/float'),
     Gate: require ('./models/gate'),
-    weakArith: require ('./models/weak-arith')
+    weakArith: require ('./models/weak-arith'),
 };
 
 class Frandre {
@@ -143,8 +143,11 @@ class Frandre {
         window._time = new models.time.Time (this);
         window._time.position (600, 50);
 
-        window._sin = new models.weakArith.Sin (this);
+        window._sin = new models.weakArith.UnaryFunction (this, Math.sin, 'sin');
         window._sin.position (500, 150);
+
+        window._sin = new models.weakArith.UnaryFunction (this, Math.cos, 'cos');
+        window._sin.position (200, 450);
 
         window._mouse = new models.Mouse (this);
         window._mouse.position (400, 550);
@@ -166,6 +169,12 @@ class Frandre {
 
         window._gate3 = new models.Gate (this);
         window._gate3.position (600, 450);
+
+        window._vec = new models.weakArith.MakeVector (this);
+        window._vec.position (600, 550);
+
+        window._h = new models.weakArith.Scale (this, 200);
+        window._h.position (200, 550);
     }
 
     processEvents () {
