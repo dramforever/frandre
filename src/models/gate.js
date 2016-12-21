@@ -17,8 +17,7 @@ class Gate extends Model {
     }
 
     getStrongDeps (label) {
-        if (this.enabled) return ['out'];
-        else return [];
+        return ['out'];
     }
 
     handleEvents ({in: evs}) {
